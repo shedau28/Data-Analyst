@@ -1,0 +1,99 @@
+1. What are the types of Applications?
+Ans. 
+
+
+2. What is programing? 
+Ans. Programming is the process of creating a set of instructions that tell a computer how to perform a task or solve a problem. It involves writing, testing, and maintaining code in specialized languages to build software, websites, apps, and artificial intelligence.
+
+3. What is Python? 
+Ans. Python is a high-level, general-purpose programming language. Famous for its clean, readable syntax that resembles plain English, it allows developers and non-programmers alike to write code with fewer lines than languages like C++ or Java.
+Beginner-Friendly: Its intuitive structure makes it the most popular introductory language taught to students and professionals today.
+Versatile & Powerful: Supports multiple programming styles (procedural, object-oriented, and functional).
+Interpreted: Code can be run line-by-line, which makes prototyping incredibly fast and easy to debug.
+Open Source: It is free to download, use, and distribute, even for commercial applications
+
+
+7.  How memory is managed in Python?
+Ans. Python handles memory management automatically using a private heap space, reference counting, and a cyclical garbage collector.
+
+
+8.What is the purpose continuing statement in python?
+Ans. The purpose of the continue statement in Python is to skip the remaining code inside the current loop iteration and jump immediately to the next cycle. Unlike the break statement, which stops the entire loop, continue keeps the loop running while selectively bypassing specific elements.
+
+
+17.  What are negative indexes and why are they used?
+Ans. Negative indexes allow you to access elements in a sequence (like arrays, lists, or strings) counting backward from the end rather than the start. Instead of calculating the length of a sequence first, they provide direct, shorthand access to the items at the end (e.g., the last element is -1).
+
+
+25. What is List? How will you reverse a list?
+Ans. A list is a versatile, ordered collection of items that can store multiple elements (like numbers, strings, or other lists) in a single variable. Lists are mutable, meaning you can change, add, or remove elements after they are created.
+
+Reverse Uisng Slicing
+my_list = [1, 2, 3, 4, 5]
+reversed_list = my_list[::-1]
+print(reversed_list)
+
+Using Reverse method
+my_list = [1, 2, 3, 4, 5]
+my_list.reverse()
+print(my_list)
+
+
+26. How will you remove last object from a list? 
+Ans. my_list.pop()
+
+
+27.  Suppose list1 is [2, 33, 222, 14, and 25], what is list1 [1]?  
+Ans. 33
+
+
+28.  Differentiate between append () and extend () methods?
+Ans. The main difference is that append() adds its argument as a single element to the end of a list, whereas extend() iterates over its argument and adds each item individually.
+
+
+30.  How will you compare two lists? 
+Ans. list1 = [1, 2, 3]
+list2 = [1, 2, 3]
+list3 = [3, 2, 1]
+
+print(list1 == list2) 
+print(list1 == list3)  
+
+43.  What is tuple? Difference between list and tuple. 
+Ans. In Python, a tuple is a built-in, immutable data structure used to store an ordered collection of items. This means that once you create a tuple, you cannot change, add, or remove its elements.
+
+List is mutable but tuple is immutable
+List definned using [ ] but tuple defined using  ( )
+List is slower in compare to tuple for iterations.
+
+
+51.  How Do You Traverse Through a Dictionary Object in Python?
+Ans. You can traverse through a dictionary object in Python most efficiently by using a for loop combined with built-in dictionary methods like items(), keys(), or values().
+
+data = {"username": "johndoe", "role": "admin", "status": "active"}
+
+for key, value in data.items():
+    print(f"{key}: {value}")
+
+
+52.  How Do You Check the Presence of a Key in A Dictionary?
+Ans. 
+my_dict = {"name": "Alice", "age": 30}
+
+if "name" in my_dict:
+    print("The key exists!")
+
+
+65.  How Many Basic Types of Functions Are Available in Python?
+Ans.  Built-In Functions, User-Defined Functions, Lambda Functions, Recursive Functions
+
+66.  How can you pick a random item from a list or tuple?
+Ans. 
+import random
+
+my_list = ['apple', 'banana', 'cherry']
+random_item = random.choice(my_list)
+print(random_item)
+
+
+67.  

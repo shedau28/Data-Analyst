@@ -1,0 +1,176 @@
+-- create database zomato;
+
+-- show databases;
+
+-- use zomato;
+
+-- create table customer ( 
+-- 	id int primary key auto_increment,
+--     name varchar(50),
+--     email varchar(50) unique key,
+--     mobile bigint unique key
+-- );
+
+#INSERT INTO customer (id, name, email, mobile) values(1, "Rahul", "r@gmail.com", 8374627482);
+
+#INSERT INTO customer (name, email, mobile) values ("Sujal", "s@gmail.com", 7346684722), ("Raj", "r1@gmail.com", 3578388357);
+
+#SELECT * FROM customer;
+
+#alter table customer add city varchar(30);
+
+#update customer set city = "Ahmedabad" where id = 1;
+#update customer set city = "Surat" where id = 5;
+
+-- Retrieve Data
+-- select * from customer where id = 1; 
+-- select name, email from customer where id = 1;
+
+-- select * from customer where name like 'R%';
+
+-- create table restaurant (
+-- rid int auto_increment primary key,
+-- rname varchar(56),
+-- rprice int,
+-- rcustomer varchar(56),
+-- order_date datetime
+-- );
+
+-- select * from restaurant;
+
+-- insert into restaurant (rid, rname, rprice, rcustomer, order_date) values (1, 'restaurant1', 554, "Rahul", "26-05-25");
+
+-- insert into restaurant (rname, rprice, rcustomer, order_date) values 
+-- ('restaurant2', 343, "Raj", "26-05-22"),
+-- ('restaurant3', 87, "Suyog", "26-05-21"),
+-- ('restaurant4', 612, "Kushal", "26-05-11"),
+-- ('restaurant5', 99, "Piyush", "26-05-21");
+
+-- select * from customer order by name asc;
+
+-- select * from customer order by name desc;
+
+-- select * from restaurant where rprice = (select min(rprice) from restaurant);
+
+-- select rname, min(rprice) from restaurant group by rname;
+
+-- select * from restaurant where rprice > 100 and rprice < 1000;
+
+-- select * from restaurant where rprice > 100 or rprice < 1000;
+
+-- select * from restaurant where rprice between 100 and 500;
+
+-- create table vendor (
+-- vid int primary key auto_increment,
+-- vname varchar(50),
+-- vemail varchar(50) unique key,
+-- vprice int,
+-- fid int,
+-- foreign key(fid) references customer(id)
+-- )
+
+-- select * from customer;
+-- select * from vendor;
+
+-- insert into vendor(vid, vname, vemail, vprice, fid) values
+-- (1, 'java', 'java@gmail.com', 1100, 1);
+
+-- insert into vendor(vname, vemail, vprice, fid) values
+-- ('python', 'py@gmail.com', 1900, 5),
+-- ('javascript', 'js@gmail.com', 1200, 6),
+-- ('dotnet', 'net@gmail.com', 1100, 1);
+
+-- select * from customer inner join vendor on customer.id = vendor.fid;
+
+-- select * from customer left join vendor on customer.id = vendor.fid;
+
+-- select * from customer right join vendor on customer.id = vendor.fid;
+
+-- select * from customer full join vendor on id = fid;
+
+
+-- delimiter $$
+-- create procedure myfun()
+
+-- begin
+-- select * from customer;
+-- end;
+
+-- call myfun();
+
+
+
+-- delimiter //
+-- create procedure myfun2()
+-- begin
+-- select * from vendor;
+-- end//
+-- delimiter ;
+
+-- call myfun2();
+
+#-------------------------------Trigger----------------------
+use zomato;
+
+-- create table temp_customer ( 
+-- 	id int primary key auto_increment,
+--     name varchar(50),
+--     email varchar(50) unique key,
+--     mobile bigint unique key
+-- );
+
+-- INSERT INTO temp_customer (id, name, email, mobile) values(1, "Rahul", "r@gmail.com", 8374627482);
+
+#INSERT INTO temp_customer (name, email, mobile) values ("Sujal", "s@gmail.com", 7346684722), ("Raj", "r1@gmail.com", 3578388357);
+
+-- drop table trigger01;
+
+-- create table trigger01 (
+-- tid int,
+-- tname varchar(55),
+-- temail varchar(50),
+-- tmobile bigint,
+-- ttime timestamp default current_timestamp,
+-- action_perform varchar(50)
+-- )
+
+#==============DELETE TRIGGER===================
+
+-- create trigger deltrigger 
+-- before delete on temp_customer
+-- for each row
+-- insert into trigger01 (tid,tname,temail,tmobile,action_perform) values
+-- (old.id, old.name, old.email, old.mobile, "Data Deleted")
+
+-- delete from temp_customer where id = 2;
+
+#===============INSERT TRIGGER=====================
+
+-- create trigger addtrigger
+-- after insert on temp_customer
+-- for each row
+-- insert into trigger01 (tid,tname,temail,tmobile,action_perform) values
+-- (new.id, new.name, new.email, new.mobile, "Data Inserted")
+
+-- INSERT INTO temp_customer (name, email, mobile) values ("Kuanl", "kk@gmail.com", 7346675522), ("Vraj", "vr@gmail.com", 3578388343);
+
+#===============UPDATE TRIGGER=====================
+
+-- create trigger beforeupdatetrigger
+-- before update on temp_customer
+-- for each row
+-- insert into trigger01 (tid,tname,temail,tmobile,action_perform) values
+-- (old.id, old.name, old.email, old.mobile, "Before Update")
+
+-- create trigger Afterupdatetrigger
+-- after update on temp_customer
+-- for each row
+-- insert into trigger01 (tid,tname,temail,tmobile,action_perform) values
+-- (new.id, new.name, new.email, new.mobile, "After Update")
+
+
+
+
+
+
+

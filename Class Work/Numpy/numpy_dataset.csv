@@ -1,0 +1,11 @@
+Product ID,City,Base Price (₹),Month 1 Units,Month 2 Units,Month 3 Units,Cost Price (₹)
+P101,Ahmedabad,500,120,135,150,320
+P102,Surat,750,90,105,120,480
+P103,Vadodara,400,150,160,175,250
+P104,Rajkot,900,70,85,100,600
+P105,Ahmedabad,650,110,125,140,420
+P106,Surat,550,130,145,160,350
+P107,Vadodara,800,80,95,115,500
+P108,Rajkot,450,140,155,170,280
+P109,Ahmedabad,1000,60,75,90,650
+P110,Surat,700,100,115,130,450
