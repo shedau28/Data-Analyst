@@ -1,4 +1,4 @@
-,id,budget,populadirector_idrity,revenue,title,vote_average,vote_count,,year,month,day
+,id,budget,popularity,revenue,title,vote_average,vote_count,director_id,year,month,day
 0,43597,237000000,150,2787965087,Avatar,7.2,11800,4762,2009,Dec,Thursday
 1,43598,300000000,139,961000000,Pirates of the Caribbean: At World's End,6.9,4500,4763,2007,May,Saturday
 2,43599,245000000,107,880674609,Spectre,6.3,4466,4764,2015,Oct,Monday

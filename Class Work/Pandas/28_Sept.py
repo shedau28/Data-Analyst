@@ -165,5 +165,5 @@ left_join = pd.merge(
     right_on='id'
 )
 
-print(left_join)
+print(left_join[['title', 'director_name']])
 
