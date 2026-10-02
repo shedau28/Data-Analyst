@@ -165,5 +165,10 @@ left_join = pd.merge(
     right_on='id'
 )
 
-print(left_join[['title', 'director_name']])
+# print(left_join[['title', 'director_name']])
+
+
+high_rev = movies.sort_values(by="revenue", ascending=False)
+print(high_rev.head(10))
+
 
