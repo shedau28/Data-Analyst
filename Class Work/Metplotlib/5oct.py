@@ -29,7 +29,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 # line graph : 
 
-
+'''
 days =[1,2,3,4,5,6,7,8,9,10]
 sales =[100,200,900,400,500,200,1200,1000,1100,900]
 
@@ -40,7 +40,7 @@ plt.ylabel("sales")
 plt.title("sales vs days")
 plt.legend("SALES", loc = 'upper left')
 plt.grid(True)
-plt.show()
+plt.show()'''
 
 
 # line  graph  with   using  csv file  : 
@@ -55,6 +55,17 @@ plt.grid(True)
 plt.show()
 """
 
+df = pd.read_csv("days_sales.csv")
+print(df)
+plt.plot(df['Day'], df['Sales'], marker='x',linestyle='', label="Sales", color="Red")
+plt.xlabel("Days")
+plt.ylabel("Sales")
+plt.title("Sales VS Days")
+plt.grid(True)
+plt.legend()
+plt.show()
+
+
 # bar chart  :  
 
 """name =['ram','sita','ravan','laxman','bhudev']
@@ -66,3 +77,7 @@ plt.ylabel("marks")
 plt.title("marks vs name")
 plt.xticks(rotation=45)
 plt.show()"""
+
+
+
+
