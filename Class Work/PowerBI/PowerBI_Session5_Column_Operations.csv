@@ -1,0 +1,13 @@
+Order_ID,Customer_Name,Customer_Location,Product_Info,Order_Date,Salesperson,Quantity,Unit_Price
+ORD001,Amit Shah,Ahmedabad-Gujarat,Laptop-Dell,2026-01-05,Rahul Mehta,2,65000
+ORD002,Priya Patel,Mumbai-Maharashtra,Phone-Samsung,2026-01-07,Priya Shah,3,28000
+ORD003,Rahul Mehta,Pune-Maharashtra,Tablet-Apple,2026-01-09,Amit Patel,1,52000
+ORD004,Neha Joshi,Ahmedabad-Gujarat,Laptop-HP,2026-01-12,Neha Shah,2,58000
+ORD005,Vivek Shah,Delhi-Delhi,Phone-Apple,2026-01-15,Karan Mehta,4,70000
+ORD006,Riya Desai,Surat-Gujarat,Monitor-LG,2026-01-18,Riya Patel,2,18000
+ORD007,Karan Patel,Vadodara-Gujarat,Laptop-Lenovo,2026-01-20,Vivek Shah,1,62000
+ORD008,Pooja Shah,Mumbai-Maharashtra,Phone-OnePlus,2026-01-23,Pooja Mehta,3,30000
+ORD009,Nitin Mehta,Rajkot-Gujarat,Tablet-Samsung,2026-01-25,Rahul Shah,2,42000
+ORD010,Anjali Desai,Pune-Maharashtra,Laptop-Asus,2026-01-28,Anjali Patel,1,55000
+ORD011,Rohan Shah,Ahmedabad-Gujarat,Monitor-Dell,2026-02-02,Karan Shah,2,22000
+ORD012,Sneha Patel,Surat-Gujarat,Phone-Xiaomi,2026-02-05,Neha Patel,4,24000
